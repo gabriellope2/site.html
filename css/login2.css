@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+
+header{
+    background-color:rgb(104, 166, 218);
+    
+} 
+
+body{
+    background-color: rgb(108, 154, 199);
+} 
+
+#logo {  
+    height: 70px;
+    }
+
+
+input{
+    border: 1px solid
+}
+
+input:invalid, textarea:invalid{
+  border-color: red;
+}
+
+input:valid, textarea:valid{
+    border-color: green;
+}
+
+
+
+
+article{
+    background-color: rgb(144, 163, 182); 
+
+}
+
+
+section#content{
+    width: 200px;
+    padding: 500px;
+    padding-top: 0;
+   
+}

@@ -1,6 +1,7 @@
 @charset "utf-8"; 
 header{
     background-color:rgb(168, 174, 179);
+    
 } 
 
 body{
@@ -21,8 +22,15 @@ nav{
        background-color: rgb(117, 116, 114);
 }
 
+
 ul {
     list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+}
+
+.nav2{
+
+    float:left;
+  
 }
 
 .produto {
@@ -40,10 +48,11 @@ ul {
     width:125px;
     margin-top:20px;
 
-
 }
 
-
+li { 
+    font-size: 31px;
+}
 
 
 
