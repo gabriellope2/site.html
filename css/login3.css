@@ -20,19 +20,11 @@ input{
     border: 1px solid
 }
 
-input:invalid, textarea:invalid{
-  border-color: red;
-}
-
-input:valid, textarea:valid{
-    border-color: green;
-}
-
-
 
 
 article{
-    background-color: rgb(144, 163, 182); 
+    background-color: rgb(129, 155, 180);
+
 
 }
 
@@ -43,3 +35,4 @@ section#content{
     padding-top: 0;
    
 }
+

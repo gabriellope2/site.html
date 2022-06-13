@@ -1,11 +1,11 @@
 @charset "utf-8"; 
 header{
-    background-color:rgb(168, 174, 179);
+    background-color:rgb(104, 166, 218);
     
 } 
 
 body{
-    background-color: rgb(129, 134, 139);
+    background-color: rgb(110, 160, 229);
 } 
 
 #logo {  
@@ -13,13 +13,13 @@ body{
      }
 
 article{
-    background-color: rgb(144, 163, 182); height: 500px;
+    background-color: rgb(128, 173, 234); height: 500px;
     float : left;
 }
 
 nav{ 
        float:right;
-       background-color: rgb(117, 116, 114);
+       background-color: rgb(83, 147, 226);
 }
 
 
@@ -43,8 +43,8 @@ ul {
  
     min-width:300px;
     height: auto;
-    border: 1px solid black;
-    background: #e8e2e2;
+    border: 1px solid rgb(10, 26, 240);
+    background: #80a1ec;
     width:125px;
     margin-top:20px;
 
@@ -53,6 +53,5 @@ ul {
 li { 
     font-size: 31px;
 }
-
 
 
