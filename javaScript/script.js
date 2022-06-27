@@ -163,4 +163,7 @@ function mudar3(){
 
 	window.location.href = "maquina.html"
 }
+function prod(){
 
+  window.location.href = "produtos.html"
+}
