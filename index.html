@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
 
 
-  <header>
-
-    <title> Lopes|principal </title>
-
-       <meta chearset="utf-8">
-       <link  rel="stylesheet" href="./css/style.css">  
-       <script src="script.js"> </script>
-       <script src=".js/cookies.js"></script>
-
-       
- </header>
-
- <body onload="checkCookie()">
 
 
-  <header>
-         
-    <img id="logo"  src="imagens/logo1.png" alt="essa e a logo do cite" >
-    <nav> 
-      <ul>
-        
-        
 
-            <li><a href="file:///C:/Users/biel-/OneDrive/%C3%81rea%20de%20Trabalho/Escola/5%C2%AA%20periodo/Tecweb/site.html/produtos.html">produtos</a></li>
-           <li><a href="file:///C:/Users/biel-/OneDrive/%C3%81rea%20de%20Trabalho/Escola/5%C2%AA%20periodo/Tecweb/site.html/contato.html">contato</a></li>
+<header>
+  
+  <title> Lopes|Login </title>
     
-          
-        
-      </ul>
-    </nav>
-  </header>
-     
-  <section>
+  <meta chearset="utf-8">
+
+  <link  rel="stylesheet" href="./css/style.css"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="javaScript/script.js"></script>
+
+
+
+
+</header>
+
+<body onload="checkCookie()">
+  <header>
    
-    <article>
-      <br>
-      <br>
-   
-      <h1>
-        
-        <p>A Lopes veio para inovoar o mercado de produtos domesticos vendidos por site. nosso site e feito de forma<br>
-        que atende a acessibilidade do usuario   </p>
+    <img id ="logo" src="imagens/logo1.png" alt="essa e a logo do cite" >
+ 
+</header>
+<section id="content">
+<article>
+       <h1>  area de cadastro</h1>
+      <form method="get" action=".">
 
+        <label for = "inputNome" > Nome : 
+        <input type = "text" name="nome"  id="nome" required maxlength="25" minlength="2"> 
+        </label >
+        <br>
+        <label for = "inputEmail" > Endereço de Email : </label >
+          <input type="email" id="inputEmail"  required  maxlength="50">
+          <br>
 
-      </h1>
+        <label>CPF:
+        <input name="cpf" type="text" id="cpf" value="" size="10" maxlength="14"
+        onblur="validarCPF(this)" /></label>
+        <br>
 
-      
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);" /></label>
+        <br>
 
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="60" /></label>
+        <br>
 
+        <label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40" /></label>
+        <br>
+
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" /></label>
+        <br>
+
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" /></label>
+        <br>
+
+        <button name="submit" type="button" onclick="mudar()">Cadastrar</button>
+
+      </form>
     </article>
-   </section>
+    </section>
 
-
-
-   <hr>
-
+    
     </body>
-
- </html>

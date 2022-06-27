@@ -1,3 +1,4 @@
+
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value=("");
@@ -65,3 +66,101 @@ else {
     limpa_formulário_cep();
 }
 };
+
+function setCookie(cname,cvalue,exdays) {
+	const d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	let expires = "expires=" + d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+	let name = cname + "=";
+	let decodedCookie = decodeURIComponent(document.cookie);
+	let ca = decodedCookie.split(';');
+	for(let i = 0; i < ca.length; i++) {
+	  let c = ca[i];
+	  while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+	  }
+	  if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+	  }
+	}
+	return "";
+  }
+  
+  function checkCookie() {
+	let user = getCookie("username");
+	if (user != "") {
+	  alert("Bem vindo de volta " + user);
+	} else {
+	   user = prompt("digite seu nome","");
+	   if (user != "" && user != null) {
+		 setCookie("username", user, 30);
+	   }
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mudar(){
+
+        window.location.href = "menu.html"
+   }
+
+
+ function validarCPF() {	
+     var cpf =  document.getElementById("cpf")
+	if(cpf == '') return false;	
+
+			
+
+	add = 0;	
+	for (i=0; i < 9; i ++)		
+		add += parseInt(cpf.charAt(i)) * (10 - i);	
+		rev = 11 - (add % 11);	
+		if (rev == 10 || rev == 11)		
+			rev = 0;	
+		if (rev != parseInt(cpf.charAt(9)))		
+			return false;		
+
+	add = 0;	
+	for (i = 0; i < 10; i ++)		
+		add += parseInt(cpf.charAt(i)) * (11 - i);	
+	rev = 11 - (add % 11);	
+	if (rev == 10 || rev == 11)	
+		rev = 0;	
+	if (rev != parseInt(cpf.charAt(10)))
+		return false;		
+	return true;   
+}
+function mudar1(){
+
+	window.location.href = "fogao.html"
+}
+
+function mudar2(){
+
+	window.location.href = "geladeira.html"
+}
+function mudar3(){
+
+	window.location.href = "maquina.html"
+}
+
